@@ -1,5 +1,5 @@
 %% Clear windows and start timing
-clc; close all; clear all; tic;
+clc; clear; close all; addpath(genpath('./helpers/')); tic;
 
 %% For each possible triplet of digits, compute the possible numerators
 %  and denominators, and for each such pair, check for desired conditions.

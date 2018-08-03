@@ -1,5 +1,5 @@
 %% Clear windows and start timing
-clc; close all; clear all; tic;
+clc; clear; close all; addpath(genpath('./helpers/')); tic;
 
 %% Constants for the problem
 N = 1001;

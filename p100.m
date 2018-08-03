@@ -1,5 +1,5 @@
 %% Clear windows and start timing
-clc; close all; clear all; tic;
+clc; clear; close all; addpath(genpath('./helpers/')); tic;
 
 %% Does not work. Finds a different solution, which I believe is right?
 
@@ -25,6 +25,6 @@ end
 
 %% Print result
 time = toc; s = a1;
-formatSpec = 'Project Euler no.100 = %s.\nIt took %f seconds.\n';
+formatSpec = 'Project Euler no.100 = %d.\nIt took %f seconds.\n';
 fprintf(formatSpec,s,time)
 

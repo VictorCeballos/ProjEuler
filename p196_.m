@@ -1,10 +1,8 @@
-function s = problem196_(a)
-
 %% Clear windows and start timing
-clc; close all; clearvars -except a; tic;
+clc; clear; close all; addpath(genpath('./helpers/')); tic;
 
-%% This time, get constant from input
-r = a;
+%% Constants for the problem
+r = 25;
 
 %%
 s = 0;
@@ -48,8 +46,6 @@ end
 time = toc; 
 formatSpec = 'Project Euler no.196 = %d.\nIt took %f seconds.\n';
 fprintf(formatSpec,s,time)
-
-end
 
 %% This helper function returns the odd neighbours of the ODD number at (r,c)
 function ns = odd_neighbours( r, c )
